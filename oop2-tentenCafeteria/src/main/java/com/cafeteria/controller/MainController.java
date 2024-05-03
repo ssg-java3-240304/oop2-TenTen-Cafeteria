@@ -187,7 +187,8 @@ public class MainController {
             endDate = new SimpleDateFormat("yyyy-MM-dd").parse(endDateString);
         } catch (ParseException e) {
             System.out.println("잘못된 입력입니다.");
-            e.printStackTrace();
+//            e.printStackTrace();
+            return -1;
         }
         return admin.getSales(startDate, endDate);
     }
